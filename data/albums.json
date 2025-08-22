@@ -63,7 +63,7 @@
   "songs": [
     { "track": 1, "title": "Oliver Sacks", "id": 298, "muse": "richardHilton", "about": "Song information will be displayed here when available." },
     { "track": 2, "title": "Oliver Sacks II", "id": 299, "muse": "richardHilton", "about": "Song information will be displayed here when available." },
-    { "track": 3, "title": "Palacio de la Zarzuela", "id": 300, "princessLeonor": "hanaMahmood", "about": "Song information will be displayed here when available." },
+    { "track": 3, "title": "Palacio de la Zarzuela", "id": 300, "muse": "hanaMahmood", "about": "Song information will be displayed here when available." },
     { "track": 4, "title": "The preacher", "id": 301, "muse": "hanaMahmood", "about": "Song information will be displayed here when available." },
     { "track": 5, "title": "Rick reflection", "id": 302, "muse": "richardHilton", "about": "Song information will be displayed here when available." },
     { "track": 6, "title": "End of summer", "id": 303, "muse": "reeneeStella", "about": "Song information will be displayed here when available." },
