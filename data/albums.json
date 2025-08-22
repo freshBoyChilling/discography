@@ -99,7 +99,7 @@
 {
   "id": 13,
   "title": "the Sessions",
-  "cover": "../images/albums/thesessions.jpg",
+  "cover": "../images/albums/theSessions.jpg",
   "releaseDate": "June 14, 2024",
   "paymentLink": "https://paystack.com/pay/thesessions",
   "songs": [
@@ -153,7 +153,7 @@
 {
   "id": 11,
   "title": "Troubadour",
-  "cover": "../images/albums/troubadour.png",
+  "cover": "../images/albums/Troubadour.png",
   "releaseDate": "January 21, 2024",
   "paymentLink": "https://paystack.com/pay/troubadour",
   "songs": [
@@ -267,7 +267,7 @@
 {
   "id": 7,
   "title": "Hilton",
-  "cover": "../images/albums/Hilton.jpg",
+  "cover": "../images/albums/theo.jpg",
   "releaseDate": "December 15, 2022",
   "paymentLink": "https://paystack.com/pay/hiltonalbum",
   "songs": [
