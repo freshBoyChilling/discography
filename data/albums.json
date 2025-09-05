@@ -8,8 +8,8 @@
     { "track": 1, "title": "So alive Overture", "id": 352, "muse": "sydneySweeney", "about": "Song information will be displayed here when available." },
     { "track": 2, "title": "Isn’t it yours", "id": 353, "muse": "princessLeonor", "about": "Song information will be displayed here when available." },
     { "track": 3, "title": "Old passions", "id": 354, "muse": "corinnaKopf", "about": "Song information will be displayed here when available." },
-    { "track": 4, "title": "Bread II", "id": 355, "muse": "nickyHilton", "about": "Song information will be displayed here when available." },
-    { "track": 5, "title": "Faraway", "id": 356, "muse": "nickyHilton", "about": "Song information will be displayed here when available." },
+    { "track": 4, "title": "Bread II", "id": 355, "muse": "nickiMinaj", "about": "Song information will be displayed here when available." },
+    { "track": 5, "title": "Faraway", "id": 356, "muse": "nickiMinaj", "about": "Song information will be displayed here when available." },
     { "track": 6, "title": "Cheer on me", "id": 357, "muse": "mariamRod", "about": "Song information will be displayed here when available." },
     { "track": 7, "title": "For it", "id": 358, "muse": "dakotaJohnson", "about": "Song information will be displayed here when available." },
     { "track": 8, "title": "Via", "id": 359, "muse": "dakotaJohnson", "about": "Song information will be displayed here when available." },
@@ -17,12 +17,12 @@
     { "track": 10, "title": "The Man", "id": 361, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 11, "title": "Headphones", "id": 362, "muse": "tateMcRae", "about": "Song information will be displayed here when available." },
     { "track": 12, "title": "Age 22", "id": 363, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
-    { "track": 13, "title": "Buddy", "id": 364, "muse": "melanieFontana", "about": "Song information will be displayed here when available." }, { "track": 14, "title": "Crux", "id": 365, "muse": "kylieJenner", "about": "CRUX marks my discography as worthy every day, being record no: 365. This means there is a record for every day of the year from now on. Released on Kylie Jenner's birthday. Day 222 of every year is officially declared as FBC Day for all the cows!" }, { "track": 15, "title": "Face card", "id": 366, "muse": "nickyHilton", "about": "Frith Hilton playfully teases what it’s like to finally achieve a desire he has longed for a while." },
+    { "track": 13, "title": "Buddy", "id": 364, "muse": "melanieFontana", "about": "Song information will be displayed here when available." }, { "track": 14, "title": "Crux", "id": 365, "muse": "kylieJenner", "about": "CRUX marks my discography as worthy every day, being record no: 365. This means there is a record for every day of the year from now on. Released on Kylie Jenner's birthday. Day 222 of every year is officially declared as FBC Day for all the cows!" }, { "track": 15, "title": "Face card", "id": 366, "muse": "nickiMinaj", "about": "Frith Hilton playfully teases what it’s like to finally achieve a desire he has longed for a while." },
     { "track": 16, "title": "Two feet", "id": 367, "muse": "kylieJenner", "about": "Frith Hilton tries to convince Kylie Jenner of his love. He even promises her a third poetry book to express what's on his mind." },
     { "track": 17, "title": "Fight", "id": 368, "muse": "kendallJenner", "about": "Frith quells a fight, but not before first recording about it." }, 
     { "track": 18, "title": "Back to back", "id": 369, "muse": "mariamRod", "about": "It's Mariam Rod's birthday soon. Frith believes there love never staled, not once." },    
     { "track": 19, "title": "Payday", "id": 400, "muse": "taylorSwift", "about": "Travis Kelce got the girl, it's Frith Hilton's Payday!" }    
-    
+
   ]
 },
 {
@@ -246,7 +246,7 @@
     { "track": 4, "title": "Raunch child", "id": 187, "muse": "teodoraDan", "about": "Song information will be displayed here when available." },
     { "track": 5, "title": "Jekyll", "id": 188, "muse": "kendallJenner", "about": "Song information will be displayed here when available." },
     { "track": 6, "title": "God of clean", "id": 189, "muse": "liliReinhart", "about": "Song information will be displayed here when available." },
-    { "track": 7, "title": "Hungry man", "id": 190, "muse": "nickyHilton", "about": "Song information will be displayed here when available." },
+    { "track": 7, "title": "Hungry man", "id": 190, "muse": "nickiMinaj", "about": "Song information will be displayed here when available." },
     { "track": 8, "title": "Lantern", "id": 191, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 9, "title": "3:30", "id": 192, "muse": "kendallJenner", "about": "Song information will be displayed here when available." },
     { "track": 10, "title": "Be my lover", "id": 193, "muse": "wolfieCindy", "about": "Song information will be displayed here when available." },
@@ -298,7 +298,7 @@
     { "track": 24, "title": "Mound gold", "id": 171, "muse": "carmellaRose", "about": "Song information will be displayed here when available." },
     { "track": 25, "title": "Jail", "id": 172, "muse": "mikaylaDemaiter", "about": "Song information will be displayed here when available." },
     { "track": 26, "title": "Stuck", "id": 173, "muse": "charliXCX", "about": "Song information will be displayed here when available." },
-    { "track": 27, "title": "Doobry", "id": 174, "muse": "nickyHilton", "about": "Song information will be displayed here when available." },
+    { "track": 27, "title": "Doobry", "id": 174, "muse": "teddyRothschild", "about": "Song information will be displayed here when available." },
     { "track": 28, "title": "Cull sigh", "id": 175, "muse": "kelseyCalemine", "about": "Song information will be displayed here when available." },
     { "track": 29, "title": "I'm on air", "id": 176, "muse": "mariamRod", "about": "Song information will be displayed here when available." },
     { "track": 30, "title": "Bread", "id": 177, "muse": "corinnaKopf", "about": "Song information will be displayed here when available." },
