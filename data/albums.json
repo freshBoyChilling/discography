@@ -3,7 +3,8 @@
   "id": 16,
   "title": "whereIsTheMoodRobot",
   "cover": "../images/albums/whereIsTheMoodRobot.png",
-  "releaseDate": "in session",
+  "releaseDate": "August 27, 2025",
+  "paymentLink":    "https://paystack.shop/pay/whereIsTheMoodRobot",
   "songs": [
     { "track": 1, "title": "So alive Overture", "id": 352, "muse": "sydneySweeney", "about": "Song information will be displayed here when available." },
     { "track": 2, "title": "Isn’t it yours", "id": 353, "muse": "princessLeonor", "about": "Song information will be displayed here when available." },
