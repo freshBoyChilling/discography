@@ -102,7 +102,7 @@
   "id": 13,
   "title": "the Sessions",
   "cover": "../images/albums/thesessions.jpg",
-  "releaseDate": "June 14, 2024",
+  "releaseDate": "July 26, 2024",
   "paymentLink": "https://paystack.com/pay/thesessions",
   "songs": [
     { "track": 1, "title": "Savour", "id": 284, "muse": "madisonBeer", "about": "Song information will be displayed here when available." },
