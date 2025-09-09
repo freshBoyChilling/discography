@@ -30,7 +30,7 @@
   "id": 15,
   "title": "Valence Eve",
   "cover": "../images/albums/ValenceEve.jpg",
-  "releaseDate": "December 31, 2024",
+  "releaseDate": "March 13, 2025",
   "paymentLink": "https://paystack.com/pay/valenceeve",
   "songs": [
     { "track": 1, "title": "I try", "id": 331, "muse": "tyla", "about": "Song information will be displayed here when available." },
