@@ -283,7 +283,7 @@
   "id": 7,
   "title": "Hilton",
   "cover": "../images/albums/Hilton.jpg",
-  "releaseDate": "February 15, 2022",
+  "releaseDate": "February 15, 2023",
   "paymentLink": "https://paystack.com/pay/hiltonalbum",
   "songs": [
     { "track": 1, "title": "Easy son", "id": 148, "muse": "sofiaWylie", "about": "Song information will be displayed here when available." },
