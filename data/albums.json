@@ -2,7 +2,7 @@
 {
   "id": 17,
   "title": "sev.en.ton",
-  "cover": "../images/albums/seventon.png",
+  "cover": "https://www.frithhilton.com.ng/images/albums/seventon.png",
   "releaseDate": "In session",
   "songs": [
     { "track": 1, "title": "Her miss", "id": 371, "muse": "esterBron", "about": "Ester Bron got a little too tense about her relationship status with Frith Hilton; she felt unseen and requested that he write her poems, but maybe a little too gruffly. Frith, upset, recorded a clap back, a first." },
@@ -17,7 +17,7 @@
 {
   "id": 16,
   "title": "whereIsTheMoodRobot",
-  "cover": "../images/albums/whereIsTheMoodRobot.png",
+  "cover": "https://www.frithhilton.com.ng/images/albums/whereIsTheMoodRobot.png",
   "releaseDate": "August 27, 2025",
   "paymentLink": "https://paystack.shop/pay/whereIsTheMoodRobot",
   "songs": [
@@ -44,7 +44,7 @@
 {
   "id": 15,
   "title": "Valence Eve",
-  "cover": "../images/albums/ValenceEve.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/ValenceEve.jpg",
   "releaseDate": "March 13, 2025",
   "paymentLink": "https://paystack.com/pay/valenceeve",
   "songs": [
@@ -74,7 +74,7 @@
 {
   "id": 14,
   "title": "Farther Memes",
-  "cover": "../images/albums/farthermemes.png",
+  "cover": "https://www.frithhilton.com.ng/images/albums/farthermemes.png",
   "releaseDate": "December 12, 2024",
   "paymentLink": "https://paystack.com/pay/farthermemes",
   "songs": [
@@ -116,7 +116,7 @@
 {
   "id": 13,
   "title": "the Sessions",
-  "cover": "../images/albums/thesessions.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/thesessions.jpg",
   "releaseDate": "July 26, 2024",
   "paymentLink": "https://paystack.com/pay/thesessions",
   "songs": [
@@ -139,7 +139,7 @@
 {
   "id": 12,
   "title": "it's pop",
-  "cover": "../images/albums/itspop.png",
+  "cover": "https://www.frithhilton.com.ng/images/albums/itspop.png",
   "releaseDate": "May 28, 2024",
   "paymentLink": "https://paystack.com/pay/itspop",
   "songs": [
@@ -170,7 +170,7 @@
 {
   "id": 11,
   "title": "Troubadour",
-  "cover": "../images/albums/troubadour.png",
+  "cover": "https://www.frithhilton.com.ng/images/albums/troubadour.png",
   "releaseDate": "March 7, 2024",
   "paymentLink": "https://paystack.com/pay/troubadour",
   "songs": [
@@ -202,7 +202,7 @@
 {
   "id": 10,
   "title": "Nightswan",
-  "cover": "../images/albums/Nightswan.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/Nightswan.jpg",
   "releaseDate": "January 15, 2024",
   "paymentLink": "https://paystack.com/pay/nightswan",
   "songs": [
@@ -234,7 +234,7 @@
 {
   "id": 9,
   "title": "the Lover tap3",
-  "cover": "../images/albums/theLovertap3.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/theLovertap3.jpg",
   "releaseDate": "July 16, 2023",
   "paymentLink": "https://paystack.com/pay/thelovertap3",
   "songs": [
@@ -252,7 +252,7 @@
 {
   "id": 8,
   "title": "lantern",
-  "cover": "../images/albums/lantern.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/lantern.jpg",
   "releaseDate": "June 4, 2023",
   "paymentLink": "https://paystack.com/pay/lanternalbum",
   "songs": [
@@ -284,7 +284,7 @@
 {
   "id": 7,
   "title": "Hilton",
-  "cover": "../images/albums/Hilton.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/Hilton.jpg",
   "releaseDate": "February 15, 2022",
   "paymentLink": "https://paystack.com/pay/hiltonalbum",
   "songs": [
@@ -329,7 +329,7 @@
 {
   "id": 6,
   "title": "Jacaranda",
-  "cover": "../images/albums/Jacaranda.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/Jacaranda.jpg",
   "releaseDate": "November 30, 2022",
   "paymentLink": "https://paystack.com/pay/jacarandaalbum",
   "songs": [
@@ -360,7 +360,7 @@
 {
   "id": 5,
   "title": "screen time",
-  "cover": "../images/albums/screentime.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/screentime.jpg",
   "releaseDate": "September 19, 2022",
   "paymentLink": "https://paystack.com/pay/screentime",
   "songs": [
@@ -403,7 +403,7 @@
 {
   "id": 4,
   "title": "Frith",
-  "cover": "../images/albums/frith.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/frith.jpg",
   "releaseDate": "June 19, 2022",
   "paymentLink": "https://paystack.com/pay/frith",
   "songs": [
@@ -435,7 +435,7 @@
 {
   "id": 3,
   "title": "December 13",
-  "cover": "../images/albums/december13.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/december13.jpg",
   "releaseDate": "January 30, 2022",
   "paymentLink": "https://paystack.com/pay/december13",
   "songs": [
@@ -469,7 +469,7 @@
 {
   "id": 2,
   "title": "Colourful Light",
-  "cover": "../images/albums/colourfullight.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/colourfullight.jpg",
   "releaseDate": "January 18, 2023",
   "paymentLink": "https://paystack.com/pay/colourfulllight",
   "songs": [
@@ -508,7 +508,7 @@
 {
   "id": 1,
   "title": "H.I.V",
-  "cover": "../images/albums/hiv.jpg",
+  "cover": "https://www.frithhilton.com.ng/images/albums/hiv.jpg",
   "releaseDate": "September 13, 2019",
   "paymentLink": "https://paystack.com/pay/hivalbum",
   "songs": [
