@@ -22,44 +22,23 @@ jobs:
           node -e "
           const fs = require('fs');
           const totalTracks = 376;
-          const baseUrl = 'https://www.frithhilton.com.ng/pages/freshPlayer.html';
-          let urls = '';
+          let xml = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\\n';
           
-          // Generate URLs for tracks 1-376
+          // Add static pages
+          xml += '  <url>\\n    <loc>https://www.frithhilton.com.ng/</loc>\\n  </url>\\n';
+          xml += '  <url>\\n    <loc>https://www.frithhilton.com.ng/pages/bio.html</loc>\\n  </url>\\n';
+          
+          // Generate track URLs 1-376
           for (let id = 1; id <= totalTracks; id++) {
-            const lastMod = new Date().toISOString().split('T')[0] + 'T00:00:00Z';
-            const priority = id >= 331 ? 0.9 : 0.8; // Higher priority for recent tracks (assuming 331+ are newer)
-            
-            urls += \`
-              <url>
-                <loc>\${baseUrl}?track=\${id}</loc>
-                <lastmod>\${lastMod}</lastmod>
-                <changefreq>monthly</changefreq>
-                <priority>\${priority}</priority>
-              </url>\`;
+            xml += \`  <url>\\n    <loc>https://www.frithhilton.com.ng/pages/freshPlayer.html?track=\${id}</loc>\\n  </url>\\n\`;
           }
           
-          const sitemap = \`<?xml version="1.0" encoding="UTF-8"?>
-          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            <url>
-              <loc>https://www.frithhilton.com.ng/</loc>
-              <lastmod>2025-09-18T00:00:00Z</lastmod>
-              <changefreq>weekly</changefreq>
-              <priority>1.0</priority>
-            </url>
-            <url>
-              <loc>https://www.frithhilton.com.ng/pages/bio.html</loc>
-              <lastmod>2025-09-18T00:00:00Z</lastmod>
-              <changefreq>monthly</changefreq>
-              <priority>1.0</priority>
-            </url>
-            \${urls}
-          </urlset>\`;
+          xml += '</urlset>';
           
-          fs.writeFileSync('sitemap.xml', sitemap);
-          console.log('Sitemap generated with 376 track URLs!');
+          fs.writeFileSync('sitemap.xml', xml);
+          console.log('✅ Sitemap generated with 376 track URLs!');
           console.log('Total URLs: 378 (376 tracks + 2 static pages)');
-          console.log('File size: ', Buffer.byteLength(sitemap, 'utf8'), 'bytes');
+          console.log('File size: ', Buffer.byteLength(xml, 'utf8'), 'bytes');
           "
 
       - name: Commit Sitemap Changes
@@ -81,7 +60,10 @@ jobs:
             echo "✅ Sitemap generated successfully!"
             echo "File size: $(wc -c < sitemap.xml) bytes"
             echo "Line count: $(wc -l < sitemap.xml) lines"
-            echo "Track URLs: $(grep -c '<loc.*track=' sitemap.xml)"
+            echo "Track URLs: $(grep -c 'track=' sitemap.xml)"
+            echo "Sample URLs:"
+            head -n 20 sitemap.xml | tail -n 10
+            echo ""
             echo "Submit this sitemap in GSC: https://www.frithhilton.com.ng/sitemap.xml"
           else
             echo "❌ Sitemap generation failed"
