@@ -1,72 +1,89 @@
-name: Generate and Deploy Sitemap
+name: Generate Track Sitemap
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: # Allows manual trigger
+
 jobs:
   generate-sitemap:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install Dependencies
-        run: npm install node-fetch
+
       - name: Generate Sitemap
         run: |
           node -e "
           const fs = require('fs');
-          const fetch = require('node-fetch').default;
-          async function generateSitemap() {
-            const albumsUrl = 'https://raw.githubusercontent.com/freshBoyChilling/discography/main/data/albums.json';
-            let urls = '';
-            try {
-              const res = await fetch(albumsUrl);
-              if (!res.ok) throw new Error('Failed to fetch albums.json');
-              const albums = await res.json();
-              for (const album of albums) {
-                const albumSlug = album.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                for (const song of album.songs) {
-                  const songSlug = song.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                  const lastMod = album.releaseDate === 'In session' ? new Date().toISOString().split('T')[0] + 'T00:00:00Z' : album.releaseDate.replace(/(\w+) (\d+), (\d+)/, '$3-$1-$2').replace(' ', 'T') + 'T00:00:00Z';
-                  urls += `
-                    <url>
-                      <loc>https://www.frithhilton.com.ng/albums/${albumSlug}/${songSlug}</loc>
-                      <lastmod>${lastMod}</lastmod>
-                      <changefreq>monthly</changefreq>
-                      <priority>${album.id >= 16 ? 0.9 : 0.8}</priority>
-                    </url>`;
-                }
-              }
-            } catch (e) {
-              console.log('Error fetching albums:', e.message);
-            }
-            const sitemap = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-              <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">
-                <url>
-                  <loc>https://www.frithhilton.com.ng/</loc>
-                  <lastmod>2025-09-18T00:00:00Z</lastmod>
-                  <changefreq>weekly</changefreq>
-                  <priority>1.0</priority>
-                </url>
-                <url>
-                  <loc>https://www.frithhilton.com.ng/pages/bio.html</loc>
-                  <lastmod>2025-09-18T00:00:00Z</lastmod>
-                  <changefreq>monthly</changefreq>
-                  <priority>1.0</priority>
-                </url>
-                ${urls}
-              </urlset>`;
-            fs.writeFileSync('sitemap.xml', sitemap);
-            console.log('Sitemap generated with friendly URLs for all tracks.');
+          const totalTracks = 376;
+          const baseUrl = 'https://www.frithhilton.com.ng/pages/freshPlayer.html';
+          let urls = '';
+          
+          // Generate URLs for tracks 1-376
+          for (let id = 1; id <= totalTracks; id++) {
+            const lastMod = new Date().toISOString().split('T')[0] + 'T00:00:00Z';
+            const priority = id >= 331 ? 0.9 : 0.8; // Higher priority for recent tracks (assuming 331+ are newer)
+            
+            urls += \`
+              <url>
+                <loc>\${baseUrl}?track=\${id}</loc>
+                <lastmod>\${lastMod}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>\${priority}</priority>
+              </url>\`;
           }
-          generateSitemap();
+          
+          const sitemap = \`<?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <url>
+              <loc>https://www.frithhilton.com.ng/</loc>
+              <lastmod>2025-09-18T00:00:00Z</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>1.0</priority>
+            </url>
+            <url>
+              <loc>https://www.frithhilton.com.ng/pages/bio.html</loc>
+              <lastmod>2025-09-18T00:00:00Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+            \${urls}
+          </urlset>\`;
+          
+          fs.writeFileSync('sitemap.xml', sitemap);
+          console.log('Sitemap generated with 376 track URLs!');
+          console.log('Total URLs: 378 (376 tracks + 2 static pages)');
+          console.log('File size: ', Buffer.byteLength(sitemap, 'utf8'), 'bytes');
           "
-      - name: Commit Sitemap
+
+      - name: Commit Sitemap Changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add sitemap.xml
-          git commit -m 'Update sitemap.xml with friendly URLs' || echo 'No changes to commit'
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update sitemap.xml with 376 track URLs (1-376)"
+            git push
+            echo "✅ Sitemap committed and pushed successfully!"
+          fi
+
+      - name: Validate Sitemap
+        run: |
+          if [ -f sitemap.xml ]; then
+            echo "✅ Sitemap generated successfully!"
+            echo "File size: $(wc -c < sitemap.xml) bytes"
+            echo "Line count: $(wc -l < sitemap.xml) lines"
+            echo "Track URLs: $(grep -c '<loc.*track=' sitemap.xml)"
+            echo "Submit this sitemap in GSC: https://www.frithhilton.com.ng/sitemap.xml"
+          else
+            echo "❌ Sitemap generation failed"
+            exit 1
+          fi
