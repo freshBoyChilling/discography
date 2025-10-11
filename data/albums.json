@@ -521,7 +521,7 @@
   "paymentLink": "https://paystack.com/pay/hivalbum",
   "songs": [
     { "track": 1, "title": "What is Love", "id": 1, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
-    { "track": 2, "title": "Real Friends", "id": 2, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
+    { "track": 2, "title": "Moonlight cover", "id": 2, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 3, "title": "Spotlight", "id": 3, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 4, "title": "Bleeding Heart", "id": 4, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 5, "title": "Rollie Dreams", "id": 5, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
