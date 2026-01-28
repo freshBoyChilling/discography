@@ -1,4 +1,14 @@
 [
+  {
+  "id": 18,
+  "title": "34 Cows",
+  "cover": "https://www.frithhilton.com.ng/images/albums/34Cows.jpg",
+  "releaseDate": "July 16, 2023",
+  "paymentLink": "https://paystack.com/pay/thelovertap3",
+  "songs": [
+    { "track": 1, "title": "Bury me alive", "id": 386, "muse": "princessLeonor", "about": "When love isn't found, it can be created." }
+  ]
+},
 {
   "id": 17,
   "title": "sev.en.ton",
