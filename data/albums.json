@@ -321,7 +321,7 @@
     { "track": 10, "title": "Favourite", "id": 157, "muse": "milouHilton", "about": "Song information will be displayed here when available." },
     { "track": 11, "title": "Rose", "id": 158, "muse": "carmellaRose", "about": "Song information will be displayed here when available." },
     { "track": 12, "title": "Swan", "id": 159, "muse": "oliviaPierson", "about": "Song information will be displayed here when available." },
-    { "track": 13, "title": "Demola (Zenosyne)", "id": 160, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
+    { "track": 13, "title": "Zenosyne", "id": 160, "muse": "taylorSwift", "about": "Song information will be displayed here when available." },
     { "track": 14, "title": "Heavy keys", "id": 161, "muse": "emmaHernan", "about": "Song information will be displayed here when available." },
     { "track": 15, "title": "Crash", "id": 162, "muse": "indiaLove", "about": "Song information will be displayed here when available." },
     { "track": 16, "title": "Oh din!", "id": 163, "muse": "chantelJeffries", "about": "Song information will be displayed here when available." },
